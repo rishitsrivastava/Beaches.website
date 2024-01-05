@@ -22,14 +22,14 @@ export default function Navbar() {
       <div>
         <h1 onClick={handlenav} className={logo ? 'hidden' : 'block'}>BEACHES.</h1>
       </div>
-      <ul className='hidden md:flex'>
-        <li>Home</li>
-        <li>Destinations</li>
-        <li>Travel</li>
-        <li>View</li>
-        <li>Book</li>
+      <ul className='hidden md:flex '>
+        <li className='cursor-pointer'>Home</li>
+        <li className='cursor-pointer'>Destinations</li>
+        <li className='cursor-pointer'>Travel</li>
+        <li className='cursor-pointer'>View</li>
+        <li className='cursor-pointer'>Book</li>
       </ul>
-      <div className='hidden md:flex'>
+      <div className='hidden md:flex cursor-pointer'>
         <BsPerson className='mr-3' size={20}/>
         <BiSearch size={20}/>
       </div>
@@ -38,7 +38,7 @@ export default function Navbar() {
       {/* hamburger */}
 
       <div onClick={handlenav} className='md:hidden z-10'>
-        { nav ? <AiOutlineClose size={20} className='text-black'/> : <HiOutlineMenuAlt4 size={20}/>}
+        { nav ? <AiOutlineClose size={20} className='text-black '/> : <HiOutlineMenuAlt4 size={20} />}
         
       </div>
       
